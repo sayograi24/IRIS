@@ -9,8 +9,8 @@ const slides = [
     {
         title: (
         <>
-            <span className="white-text">Turn your designs </span><br></br>
-            <span className="blue-text">Into reality now!</span>
+            <span className="white-text">Turn Your Designs </span><br></br>
+            <span className="blue-text">Into Reality Now!</span>
         </>
         ),
         subtitle: (
@@ -23,8 +23,8 @@ const slides = [
     {
         title: (
         <>
-                <span className="black-text">Unleash creativity </span><br></br>
-                <span className="blue-text">With every pixel!</span>
+                <span className="black-text">Unleash Creativity </span><br></br>
+                <span className="blue-text">With Every Pixel!</span>
         </>
         ),
         subtitle: (
@@ -44,7 +44,7 @@ const Slider = () => {
         if (timerRef.current) clearInterval(timerRef.current);
         timerRef.current = setInterval(() => {
         setIndex((prev) => (prev + 1) % slides.length);
-        }, 5000);
+        }, 7500);
     };
 
     useEffect(() => {

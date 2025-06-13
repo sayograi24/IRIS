@@ -33,7 +33,7 @@ const Header = () => {
           <a href="#">Services</a>
           <a href="#">Portfolio</a>
         </nav>
-        <button className="cta-button">Get Your Design Now</button>
+        <button className="cta-button">Get Your Design Now ↗</button>
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>

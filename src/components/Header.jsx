@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/IRIS.png";
-import logoname from "../assets/logoname.png"
+import logoname from "../assets/logoname.png";
 import "./Header.css";
 
 const Header = () => {
@@ -19,19 +20,22 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
         <img className="logohead" src={logo} alt="Logo" />
         <img className="logoname" src={logoname} alt="Logoname" />
-        
       </div>
 
       <div className={`nav-cta-container ${menuOpen ? "open" : ""}`}>
         <nav className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Portfolio</a>
+          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/services" onClick={closeMenu}>Services</Link>
+          <Link to="/portfolio" onClick={closeMenu}>Portfolio</Link>
         </nav>
         <button className="cta-button">Get Your Design Now ↗</button>
       </div>

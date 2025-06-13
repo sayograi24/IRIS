@@ -17,6 +17,7 @@ const Header = () => {
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
         <img src={logo} alt="Logo" />
+        <p className="logoname">IRIS VISUALS</p>
       </div>
       <div className="nav-cta-container">
         <nav className="nav-links">

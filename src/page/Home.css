@@ -1,31 +1,54 @@
 .home-main {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 40px 40px;
+  padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #263238;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 64px;
+}
+
+.hero-intro {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.hero-intro h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #1e3a43;
+  margin-bottom: 16px;
+  background: linear-gradient(to right, #309baa, #40c0d0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-intro p {
+  font-size: 1.25rem;
+  color: #546e7a;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+  animation: fadeInUp 1.3s ease;
 }
 
 .home-section {
-  background: #f9fbfc;
-  border-radius: 16px;
-  padding: 0px 40px;
-  box-shadow:
-    4px 4px 10px rgba(48, 155, 170, 0.15),
-    -4px -4px 10px #ffffff;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 8px 8px 20px rgba(48, 155, 170, 0.15), -4px -4px 12px #ffffff;
   text-align: center;
-  line-height: 1.6;
-  transition: box-shadow 0.35s ease;
-  cursor: default;
+  line-height: 1.7;
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease;
 }
 
 .home-section:hover {
-  box-shadow:
-    6px 6px 20px rgba(48, 155, 170, 0.3),
-    -6px -6px 20px #e6f7f9;
+  box-shadow: 12px 12px 30px rgba(48, 155, 170, 0.3), -8px -8px 20px #ffffff;
+  transform: translateY(-4px);
 }
 
 .home-section h2 {
@@ -33,13 +56,10 @@
   align-items: center;
   gap: 16px;
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   color: #309baa;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
-  user-select: none;
-  position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   transition: color 0.3s ease;
 }
 
@@ -47,94 +67,160 @@
   color: #40c0d0;
 }
 
-.home-section h2 img.icon {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 6px #309baa99);
-  transition: transform 0.35s ease, filter 0.35s ease;
-}
-
-.home-section h2:hover img.icon {
-  transform: scale(1.2) rotate(5deg);
-  filter: drop-shadow(0 0 10px #40c0d0cc);
-}
-
 .home-section p {
   font-size: 1.2rem;
   color: #374151;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .home-section p.emphasis {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  gap: 12px;
   font-weight: 600;
   font-size: 1.3rem;
-  color: #40c0d0;
-  background: #e0f2f7;
-  padding: 14px 28px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  padding: 16px 32px;
   border-radius: 40px;
-  box-shadow:
-    4px 4px 10px #c0e5f1,
-    -4px -4px 10px #ffffff;
+  box-shadow: 4px 4px 12px #c0e5f1, -4px -4px 12px #ffffff;
+  color: #309baa;
   cursor: pointer;
-  user-select: none;
-  transition:
-    background-color 0.35s ease,
-    color 0.35s ease,
-    box-shadow 0.35s ease,
-    transform 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .home-section p.emphasis:hover {
-  background-color: #40c0d0;
-  color: white;
-  box-shadow:
-    0 0 20px #40c0d0cc,
-    inset 0 0 15px #40c0d0cc;
+  background: #40c0d0;
+  color: #ffffff;
   transform: scale(1.05);
+  box-shadow: 0 0 20px #40c0d0aa, inset 0 0 10px #ffffff66;
 }
 
-.home-section p.emphasis img.icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px #40c0d0aa);
-  transition: transform 0.35s ease, filter 0.35s ease;
+.services-grid {
+  background: linear-gradient(to bottom, #f8fdff, #e0f7fa);
+  padding: 80px 40px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1), -4px -4px 16px #ffffff;
 }
 
-.home-section p.emphasis:hover img.icon {
-  transform: scale(1.25) translateX(5px);
-  filter: drop-shadow(0 0 10px #ffffffcc);
+.services-grid h2 {
+  font-size: 2.5rem;
+  color: #309baa;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-  .home-main {
-    padding: 20px 20px;
+.services-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 36px;
+}
+
+.service-item {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.08), -6px -6px 16px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.15), -6px -6px 20px #ffffff;
+}
+
+.service-item h3 {
+  font-size: 1.4rem;
+  margin-top: 12px;
+  color: #263238;
+  font-weight: 600;
+}
+
+.service-item p {
+  font-size: 1.1rem;
+  color: #607d8b;
+  margin-top: 10px;
+}
+
+.call-to-action {
+  text-align: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #e0f7fa 100%);
+  border-radius: 28px;
+  box-shadow: 4px 4px 24px rgba(48, 155, 170, 0.25), -4px -4px 20px #ffffff;
+}
+
+.call-to-action h2 {
+  font-size: 2.6rem;
+  color: #309baa;
+  margin-bottom: 18px;
+}
+
+.call-to-action p {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 28px;
+}
+
+.home-button {
+  font-size: 1.1rem;
+  background-color: #309baa;
+  color: white;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15), -4px -4px 12px #ffffff;
+}
+
+.home-button:hover {
+  background-color: #40c0d0;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 20px #40c0d0aa, inset 0 0 10px #ffffff88;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .home-section {
-    padding: 20px 25px;
+@media (max-width: 768px) {
+  .hero-intro h1 {
+    font-size: 2.3rem;
   }
 
   .home-section h2 {
     font-size: 2rem;
   }
 
-  .home-section h2 img.icon {
-    width: 30px;
-    height: 30px;
+  .services-grid {
+    padding: 50px 20px;
   }
 
-  .home-section p.emphasis {
-    font-size: 1.1rem;
-    padding: 12px 20px;
-  }
-
-  .home-section p.emphasis img.icon {
-    width: 24px;
-    height: 24px;
+  .call-to-action {
+    padding: 50px 20px;
   }
 }
+
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+

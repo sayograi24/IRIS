@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./AboutUs.css";
-import {FaBullseye, FaUsers, FaLightbulb, FaRocket, FaMapMarkedAlt} from "react-icons/fa";
-import { useOnScreen } from "../hooks/useonscreen"; 
+import { FaBullseye, FaUsers, FaLightbulb, FaRocket, FaMapMarkedAlt } from "react-icons/fa";
+import { useOnScreen } from "../hooks/useonscreen";
 
 const AboutUs = () => {
   const [heroRef, heroVisible] = useOnScreen({ threshold: 0.3 });

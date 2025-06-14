@@ -1,0 +1,265 @@
+.contact-main {
+  max-width: 1100px;
+  margin: 80px auto 40px;
+  padding: 0 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #263238;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.contact-hero {
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  color: #309baa;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.contact-hero p {
+  font-size: 1.3rem;
+  color: #546e7a;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-hero-subtext {
+  margin-top: 8px;
+  color: #546e7a;
+  font-style: italic;
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #e0f7fa;
+  padding: 18px 24px;
+  border-radius: 20px;
+  color: #309baa;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 5px 5px 12px #b0dde4, -5px -5px 12px #ffffff;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #40c0d0;
+  flex-shrink: 0;
+}
+
+.contact-form {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1.1rem;
+  padding: 16px 22px;
+  border-radius: 18px;
+  border: 2px solid #309baa;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #263238;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #7f8c8d;
+  opacity: 1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #40c0d0;
+  box-shadow: 0 0 8px #40c0d0aa;
+}
+
+.send-button {
+  padding: 16px 36px;
+  font-size: 1.2rem;
+  background-color: #309baa;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.15), -5px -5px 12px #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  align-self: flex-start;
+}
+
+.send-button:hover {
+  background-color: #40c0d0;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 20px #40c0d0aa, inset 0 0 10px #ffffff88;
+}
+
+.social-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #309baa;
+  margin-bottom: 24px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #309baa;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #40c0d0;
+}
+
+.slide-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-fade-in-delay {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.9s ease 0.2s, transform 0.9s ease 0.2s;
+}
+
+.slide-fade-in-delay2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease 0.4s, transform 1s ease 0.4s;
+}
+
+.slide-fade-out {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Honeypot hidden input */
+.honeypot {
+  display: none;
+}
+
+/* Contact links */
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Address styling */
+.contact-address {
+  margin: 0;
+}
+
+/* Submission message */
+.submit-message {
+  color: #309baa;
+  font-weight: 600;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-hero h1 {
+    font-size: 2.6rem;
+  }
+  .contact-hero p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 14px 20px;
+  }
+
+  .send-button {
+    font-size: 1.1rem;
+    padding: 14px 32px;
+  }
+
+  .social-icons {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+
+  .info-item {
+    font-size: 1rem;
+    padding: 16px 20px;
+  }
+
+  .contact-icon {
+    font-size: 1.6rem;
+  }
+
+  .send-button {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+}

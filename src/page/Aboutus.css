@@ -1,100 +1,139 @@
 .about-container {
-  max-width: 900px;
-  margin: 60px auto 100px;
-  padding: 0 20px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #263238;
-  line-height: 1.6;
+}
+
+.about-hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-hero.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-hero-text {
+  flex: 1;
+}
+
+.about-hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-title {
   font-size: 3rem;
-  font-weight: 700;
   color: #40c0d0;
-  text-align: center;
-  margin-bottom: 15px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .about-subtitle {
   font-size: 1.25rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 40px;
   color: #309baa;
-  font-style: italic;
+  margin-bottom: 30px;
 }
 
 .about-content {
   font-size: 1.1rem;
-  margin-bottom: 40px;
   color: #4a4a4a;
-  text-align: justify;
+  line-height: 1.6;
 }
 
-.about-mission,
-.about-values,
-.about-history,
-.about-team,
-.about-future {
-  background: #e0f7fa22;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.about-section {
+  background: #e0f7fa44;
+  padding: 25px;
   border-left: 6px solid #40c0d0;
-  padding: 20px 25px;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
 }
 
-.about-mission h3,
-.about-values h3,
-.about-history h3,
-.about-team h3,
-.about-future h3 {
+.about-section:hover {
+  transform: translateY(-5px);
+}
+
+.about-section h3 {
   font-size: 1.5rem;
-  font-weight: 700;
   color: #007a8a;
-  margin-bottom: 15px;
-  letter-spacing: 0.04em;
+  margin-bottom: 10px;
 }
 
-.about-mission p,
-.about-values p,
-.about-history p,
-.about-team p,
-.about-future p {
-  font-size: 1rem;
+.about-section p {
   color: #2a2a2a;
-  margin: 0;
   line-height: 1.5;
 }
 
-@media (max-width: 700px) {
-  .about-container {
-    margin: 40px 15px 60px;
-    padding: 0 15px;
+/* Staggered animation delay for .about-section */
+.about-section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.about-section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.about-section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.about-section:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.about-map {
+  margin-top: 80px;
+}
+
+.about-map h3 {
+  font-size: 1.4rem;
+  color: #007a8a;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .about-title {
-    font-size: 2.4rem;
-  }
-
-  .about-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .about-mission,
-  .about-values,
-  .about-history,
-  .about-team,
-  .about-future {
-    padding: 15px 20px;
-  }
-
-  .about-mission h3,
-  .about-values h3,
-  .about-history h3,
-  .about-team h3,
-  .about-future h3 {
-    font-size: 1.3rem;
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }

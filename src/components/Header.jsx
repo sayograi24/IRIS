@@ -37,7 +37,7 @@ const Header = () => {
           <Link to="/services" onClick={closeMenu}>Services</Link>
           <Link to="/portfolio" onClick={closeMenu}>Portfolio</Link>
         </nav>
-        <button className="cta-button">Get Your Design Now ↗</button>
+          <button className="cta-button">Get Your Design Now ↗</button>
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>

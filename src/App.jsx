@@ -5,6 +5,8 @@ import Services from "./page/Services";
 import AboutUs from "./page/Aboutus";
 import ContactUs from "./page/ContactUs";
 import ScrollToTop from "./components/ScrollToTop";
+import Login from "./page/Login";
+import RegisterNow from './page/RegisterNow';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<RegisterNow />} />
       </Routes>
     </Router>
   );

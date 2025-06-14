@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useOnScreen } from "../hooks/useonscreen";
@@ -145,10 +145,10 @@ const ContactUs = () => {
             <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
+            <a href="https://www.linkedin.com/in/iris-visuals-78158836b/" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/iris.visuals00/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </div>

@@ -29,7 +29,7 @@ const Home = () => {
           ref={whatRef}
           className={`home-section ${whatVisible ? "fade-in" : "fade-hidden"}`}
         >
-          <h2 className="section-title">
+          <h2 className="section-title">{/*asd*/ }
             <FaLightbulb color="#309baa" size={28} />
             What do we do?
           </h2>

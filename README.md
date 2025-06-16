@@ -1,72 +1,57 @@
-IRIS
-IRIS is a modern, animated, and visually appealing React-based website showcasing professional services with interactive UI components and smooth animations.
+# 🌟 IRIS
 
-Table of Contents
-About
+![GitHub repo size](https://img.shields.io/github/repo-size/sayograi24/IRIS)
+![GitHub language count](https://img.shields.io/github/languages/count/sayograi24/IRIS)
+![GitHub top language](https://img.shields.io/github/languages/top/sayograi24/IRIS)
+![GitHub last commit](https://img.shields.io/github/last-commit/sayograi24/IRIS)
+![License](https://img.shields.io/github/license/sayograi24/IRIS)
 
-Features
+---
 
-Technologies
+## 🚀 About IRIS
 
-Installation
+**IRIS** is a modern, animated React website designed to showcase professional services with smooth animations, responsive design, and an engaging user interface. Perfect for freelancers, agencies, or portfolios.
 
-Usage
+---
 
-Folder Structure
+## ✨ Features
 
-Contributing
+- Fully **responsive** and mobile-friendly design  
+- Beautiful **animated fade-in** and **hover effects**  
+- Interactive **service cards** with icons and descriptions  
+- Keyboard and accessibility friendly  
+- Modular React components for easy customization  
+- Clean and modern UI with professional typography  
 
-License
+---
 
-Contact
+## 🛠️ Technologies
 
-About
-IRIS is designed as a professional services portfolio website, focusing on modern UI/UX, responsive layouts, and accessibility. The project includes multiple pages like Home, Services, About Us, and Contact Us, with animated components and interactive elements.
+- React  
+- React Icons  
+- CSS3 (with animations and media queries)  
+- JavaScript (ES6+)  
+- Google Fonts (Poppins)  
 
-Features
-Responsive design supporting desktop and mobile devices
+---
 
-Animated fade-in and hover effects
+## ⚙️ Installation & Setup
 
-Service cards with icons and descriptions
-
-Accessible keyboard focus outlines
-
-Modular React components for easy maintenance
-
-Smooth transitions and visual feedback on user interactions
-
-Technologies
-React
-
-React Icons
-
-CSS3 with animations and media queries
-
-JavaScript (ES6+)
-
-Poppins font from Google Fonts
-
-Installation
-bash
-Copy
-Edit
+```bash
+# Clone the repository
 git clone https://github.com/sayograi24/IRIS.git
+
+# Navigate to the project directory
 cd IRIS
+
+# Install dependencies
 npm install
+
+# Run the app locally
 npm start
-Open your browser and go to http://localhost:3000
+Open http://localhost:3000 to view it in your browser.
 
-Usage
-Navigate to the Services page to view available professional services with animated cards.
-
-Hover or tab through service cards to see interactive effects.
-
-Customize services by editing the servicesData array in Services.jsx.
-
-Modify styles in the CSS files under /src/styles/.
-
-Folder Structure
+📂 Project Structure
 pgsql
 Copy
 Edit
@@ -84,19 +69,22 @@ IRIS/
 │   └── index.js
 ├── package.json
 └── README.md
-Contributing
-Fork the repository
+🤝 Contributing
+Contributions are welcome! Follow these steps:
 
-Create a new branch (git checkout -b feature/your-feature)
+Fork the repo
 
-Commit your changes (git commit -m 'Add your feature')
+Create your feature branch (git checkout -b feature/YourFeature)
 
-Push to the branch (git push origin feature/your-feature)
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/YourFeature)
 
 Open a Pull Request
 
-License
-MIT License. See the LICENSE file for details.
+📄 License
+This project is licensed under the MIT License.
 
-Contact
+📬 Contact
 Created by sayograi24.
+Feel free to reach out!

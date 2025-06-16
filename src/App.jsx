@@ -7,6 +7,7 @@ import ContactUs from "./page/ContactUs";
 import ScrollToTop from "./components/ScrollToTop";
 import Login from "./page/Login";
 import RegisterNow from './page/RegisterNow';
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<RegisterNow />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

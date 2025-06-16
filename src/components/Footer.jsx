@@ -14,11 +14,11 @@ const Footer = () => (
             <div>All rights reserved.</div>
         </div>
         <div className="social-icons">
-            <a href="https://www.instagram.com/iris.visuals00/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <FontAwesomeIcon icon={faInstagram} />
-            </a>
             <a href="https://www.linkedin.com/in/iris-visuals-78158836b/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FontAwesomeIcon icon={faFacebookF} />
+            </a>
+            <a href="https://www.instagram.com/iris.visuals00/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://www.linkedin.com/in/iris-visuals-78158836b/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FontAwesomeIcon icon={faLinkedin} />

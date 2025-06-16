@@ -133,3 +133,61 @@
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 0 20px #40c0d0aa, inset 0 0 10px #ffffff88;
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px #40c0d0aa;
+  }
+  50% {
+    box-shadow: 0 0 20px #40c0d0ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #40c0d0aa;
+  }
+}
+
+.register-container {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.input-group input:focus {
+  border-color: #40c0d0;
+  box-shadow: 0 0 12px #40c0d088, 0 0 2px #40c0d0;
+  background: linear-gradient(135deg, #ffffff, #f2fcff);
+  transition: all 0.4s ease;
+}
+
+.register-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px #309baa;
+}
+
+.register-button.glow-pulse {
+  animation: pulseGlow 1.8s infinite ease-in-out;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.register-note {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 1rem;
+}

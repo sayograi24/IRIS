@@ -165,3 +165,21 @@
     border-radius: 10px;
   }
 }
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .services-page {
+    padding: 70px 30px;
+  }
+
+  .services-header h1 {
+    font-size: 3rem;
+  }
+
+  .services-header p {
+    font-size: 1.15rem;
+  }
+}

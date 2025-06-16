@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@600&display=swap');
+
+.notfound-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #263238 0%, #1b2a2e 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e0e7e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.notfound-title {
+  font-size: 12rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  margin: 0;
+  color: #40c0d0;
+  text-shadow: 0 0 12px #40c0d0bb;
+  animation: bounceIn 1.2s ease forwards;
+}
+
+.notfound-subtitle {
+  font-size: 2rem;
+  margin-top: -20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #9bb9bc;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.notfound-text {
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+  color: #cad7db;
+  animation: fadeInUp 1.7s ease forwards;
+}
+
+.notfound-button {
+  background-color: #40c0d0;
+  color: #1b2a2e;
+  padding: 14px 36px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(64, 192, 208, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1.9s ease forwards;
+  display: inline-block;
+}
+
+.notfound-button:hover,
+.notfound-button:focus {
+  background-color: #2aa1b3;
+  transform: scale(1.05);
+  outline: none;
+}
+
+.notfound-animation {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(64, 192, 208, 0.7);
+  border-radius: 50%;
+  animation: dotPulse 1.5s infinite ease-in-out;
+}
+
+.dot1 {
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-delay: 0.3s;
+}
+
+.dot3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

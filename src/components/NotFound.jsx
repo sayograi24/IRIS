@@ -15,9 +15,9 @@ const NotFoundPage = () => {
         </a>
       </div>
       <div className="notfound-animation" aria-hidden="true">
-        <span className="dot dot1"></span>
-        <span className="dot dot2"></span>
-        <span className="dot dot3"></span>
+        <span className="dot dota"></span>
+        <span className="dot dotb"></span>
+        <span className="dot dotc"></span>
       </div>
     </div>
   );

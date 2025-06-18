@@ -81,15 +81,15 @@
   animation: dotPulse 1.5s infinite ease-in-out;
 }
 
-.dot1 {
+.dota {
   animation-delay: 0s;
 }
 
-.dot2 {
+.dotb {
   animation-delay: 0.3s;
 }
 
-.dot3 {
+.dotc {
   animation-delay: 0.6s;
 }
 

@@ -1,0 +1,129 @@
+/* AdminLogin.css */
+
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #40c0d0, #1e2a38);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.admin-login-form {
+  background-color: #fff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(64, 192, 208, 0.3);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.admin-login-form h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1e2a38;
+  letter-spacing: 1.5px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #40c0d0;
+  box-shadow: 0 0 8px rgba(64, 192, 208, 0.4);
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 5px;
+  color: #999;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: #40c0d0;
+  font-weight: 600;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #40c0d0;
+  font-size: 1.2rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #40c0d0;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #309baa;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.register-text {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.register-link {
+  color: #40c0d0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

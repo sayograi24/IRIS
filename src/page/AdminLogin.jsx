@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
-import "./Login.css";
+import { useNavigate } from "react-router-dom";
+import "./AdminLogin.css"; // create separate CSS if you want
 
-const Login = () => {
+const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -15,8 +15,7 @@ const Login = () => {
     setError("");
 
     try {
-      // Replace with your backend API URL
-      const response = await fetch("http://localhost:5000/api/login", {
+      const response = await fetch("http://localhost:5000/api/admin/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -25,21 +24,10 @@ const Login = () => {
       const data = await response.json();
 
       if (response.ok) {
-        // Successful login
-        // Save JWT token (or your backend token) to localStorage or state
         localStorage.setItem("token", data.token);
-
-        // Optional: Save user role or isAdmin flag
-        localStorage.setItem("isAdmin", data.is_admin);
-
-        // Redirect user to home or admin dashboard based on role
-        if (data.is_admin) {
-          navigate("/admin/dashboard");
-        } else {
-          navigate("/");
-        }
+        localStorage.setItem("isAdmin", true);
+        navigate("/admin/dashboard");
       } else {
-        // Login failed
         setError(data.message || "Login failed");
       }
     } catch (err) {
@@ -48,34 +36,32 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleSubmit} noValidate>
-        <h2>Login</h2>
+    <div className="admin-login-container">
+      <form className="admin-login-form" onSubmit={handleSubmit} noValidate>
+        <h2>Admin Login</h2>
 
         <div className="input-group">
           <input
             type="email"
-            id="email"
             placeholder=" "
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
             autoComplete="username"
           />
-          <label htmlFor="email">Email</label>
+          <label>Email</label>
         </div>
 
         <div className="input-group password-wrapper">
           <input
             type={showPassword ? "text" : "password"}
-            id="password"
             placeholder=" "
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
             autoComplete="current-password"
           />
-          <label htmlFor="password">Password</label>
+          <label>Password</label>
           <button
             type="button"
             className="password-toggle-btn"
@@ -88,13 +74,6 @@ const Login = () => {
 
         {error && <p className="error-message">{error}</p>}
 
-        <p className="register-text">
-          Don't have an account?{" "}
-          <Link to="/register" className="register-link">
-            Register now
-          </Link>
-        </p>
-
         <button type="submit" className="login-button">
           Log In
         </button>
@@ -103,4 +82,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AdminLogin;

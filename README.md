@@ -1,4 +1,4 @@
-# 🌟 IRIS
+#  IRIS
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/sayograi24/IRIS)
 ![GitHub language count](https://img.shields.io/github/languages/count/sayograi24/IRIS)
@@ -8,13 +8,13 @@
 
 ---
 
-## 🚀 About IRIS
+##  About IRIS
 
 **IRIS** is a modern, animated React website designed to showcase professional services with smooth animations, responsive design, and an engaging user interface. Perfect for freelancers, agencies, or portfolios.
 
 ---
 
-## ✨ Features
+##  Features
 
 - Fully **responsive** and mobile-friendly design  
 - Beautiful **animated fade-in** and **hover effects**  
@@ -25,7 +25,7 @@
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 - React  
 - React Icons  
@@ -51,7 +51,7 @@ npm install
 npm start
 Open http://localhost:3000 to view it in your browser.
 
-📂 Project Structure
+Project Structure
 pgsql
 Copy
 Edit
@@ -69,7 +69,7 @@ IRIS/
 │   └── index.js
 ├── package.json
 └── README.md
-🤝 Contributing
+Contributing
 Contributions are welcome! Follow these steps:
 
 Fork the repo
@@ -82,9 +82,9 @@ Push to the branch (git push origin feature/YourFeature)
 
 Open a Pull Request
 
-📄 License
+License
 This project is licensed under the MIT License.
 
-📬 Contact
+Contact
 Created by sayograi24.
 Feel free to reach out!

@@ -87,4 +87,7 @@ This project is licensed under the MIT License.
 
 Contact
 Created by sayograi24.
+Email: sayograi24@gmail.com
+Phone: +977 9744446444
+Facebook:https://www.facebook.com/share/1CU4NS4jFX/?mibextid=wwXIfr
 Feel free to reach out!
